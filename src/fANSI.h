@@ -13,34 +13,35 @@ namespace fANSI {
     enum   bits_t : uint8_t { Four=4, Six=6, Eight=8 };
 
     struct bit4_t {
-        uint8_t fg : 4,
-                bg : 4;
+        uint8_t f : Four,
+                b : Four;
     };
 
     struct bit6_t {
-        uint8_t r : 6,
-                g : 6,
-                b : 6,
-           unused : 6;
+        uint8_t r : Six,
+                g : Six,
+                b : Six,
+           unused : Six;
     };
     
     struct bit8_t {
-        uint8_t r : 8,
-                g : 8,
-                b : 8;
+        uint8_t r : Eight,
+                g : Eight,
+                b : Eight;
     };
     
-
     enum { Black=0, Red, Green, Yellow, Blue, Magenta, Cyan, White, Bright };
     enum { BEL=0x07, BS=0x08, HT=0x09, LF=0x0A, FF=0x0C, CR=0x0D, ESC=0x1B };
 
     static char str[256] = "";
     static char const digits[16] = { '0','1','2','3','4','5','6','7','8','9','A','B','C','D', 'E','F' };
 
+    // format the string in the global buffer 'str' using the 
+    // supplied format string and optional parameters
     int format(char const * const fmt, ...) {
         int length = -1;
         va_list argList;
-        va_start( argList, fmt);
+        va_start(argList, fmt);
         length = vsnprintf(str, sizeof(str), fmt, argList);
         va_end( argList );
         return length;
@@ -63,7 +64,10 @@ namespace fANSI {
     //////////////////////////////////////////////////////////
     // switch to alternate screen buffer
     #define ALTSCRN CSI "?1047h"
+    #define SAVECURS    CSI "s"
+    #define RESTORECURS CSI "u"
     void altScreen() {
+        stream.write(SAVECURS, sizeof(SAVECURS));
         stream.write(ALTSCRN, sizeof(ALTSCRN));
     }
 
@@ -72,6 +76,7 @@ namespace fANSI {
     #define STDSCRN CSI "?1047l"
     void stdScreen() {
         stream.write(STDSCRN, sizeof(STDSCRN));
+        stream.write(RESTORECURS, sizeof(RESTORECURS));
     }
 
     //////////////////////////////////////////////////////////
@@ -322,6 +327,6 @@ namespace fANSI {
         
     };
 
-}; // namespace ansi
+}; // namespace fANSI
 
 #endif // FANSI_INCL
