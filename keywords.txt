@@ -1,0 +1,78 @@
+########################################################
+# Syntax Coloring Map for Arduino fANSI Library
+########################################################
+# https://github.com/ripred/fANSI
+########################################################
+# Datatypes (KEYWORD1)
+########################################################
+fANSI                    KEYWORD1
+
+########################################################
+# Methods and Functions (KEYWORD2)
+########################################################
+csi                      KEYWORD2
+resetAll                 KEYWORD2
+altScrn                  KEYWORD2
+stdScrn                  KEYWORD2
+boldAttr                 KEYWORD2
+faintAttr                KEYWORD2
+underAttr                KEYWORD2
+neitherAttr              KEYWORD2
+reverseAttr              KEYWORD2
+strikeAttr               KEYWORD2
+cursOff                  KEYWORD2
+cursOn                   KEYWORD2
+cursEx                   KEYWORD2
+cursUp                   KEYWORD2
+cursDown                 KEYWORD2
+cursLeft                 KEYWORD2
+cursRight                KEYWORD2
+cursNextLine             KEYWORD2
+cursPrevLine             KEYWORD2
+clearEOL                 KEYWORD2
+clearEOD                 KEYWORD2
+cursPos                  KEYWORD2
+cls                      KEYWORD2
+setColor                 KEYWORD2
+fg4b                     KEYWORD2
+bg4b                     KEYWORD2
+fg6b                     KEYWORD2
+bg6b                     KEYWORD2
+fg24b                    KEYWORD2
+bg24b                    KEYWORD2
+fgGray6b                 KEYWORD2
+bgGray6b                 KEYWORD2
+border                   KEYWORD2
+printAt                  KEYWORD2
+
+########################################################
+# Constants (LITERAL1)
+########################################################
+Black                       LITERAL1
+Red                         LITERAL1
+Green                       LITERAL1
+Yellow                      LITERAL1
+Blue                        LITERAL1
+Magenta                     LITERAL1
+Cyan                        LITERAL1
+White                       LITERAL1
+BEL                         LITERAL1
+BS                          LITERAL1
+HT                          LITERAL1
+LF                          LITERAL1
+FR                          LITERAL1
+ESC                         LITERAL1
+RESETALL                    LITERAL1
+ALTSCRN                     LITERAL1
+STDSCRN                     LITERAL1
+CURSOFF                     LITERAL1
+CURSON                      LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CURSOFF                     LITERAL1
+CLEAREOL                    LITERAL1
+CLEAREOD                    LITERAL1
