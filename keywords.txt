@@ -56,6 +56,7 @@ Blue                        LITERAL1
 Magenta                     LITERAL1
 Cyan                        LITERAL1
 White                       LITERAL1
+Bright                      LITERAL1
 BEL                         LITERAL1
 BS                          LITERAL1
 HT                          LITERAL1
