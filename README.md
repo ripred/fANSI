@@ -1,3 +1,9 @@
+[![Arduino CI](https://github.com/ripred/fANSI/workflows/Arduino%20CI/badge.svg)](https://github.com/marketplace/actions/arduino_ci)
+[![Arduino-lint](https://github.com/ripred/fANSI/actions/workflows/arduino-lint.yml/badge.svg)](https://github.com/ripred/fANSI/actions/workflows/arduino-lint.yml)
+![code size:](https://img.shields.io/github/languages/code-size/ripred/fANSI)
+[![GitHub release](https://img.shields.io/github/release/ripred/fANSI.svg?maxAge=3600)](https://github.com/ripred/fANSI/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ripred/fANSI/blob/master/LICENSE)
+
 fANSI Library
 
 This library allows you to send ANSI control sequences to a PC, Mac, or Linux
