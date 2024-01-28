@@ -2,7 +2,7 @@
 [![Arduino-lint](https://github.com/ripred/fANSI/actions/workflows/arduino-lint.yml/badge.svg)](https://github.com/ripred/fANSI/actions/workflows/arduino-lint.yml)
 ![code size:](https://img.shields.io/github/languages/code-size/ripred/fANSI)
 [![GitHub release](https://img.shields.io/github/release/ripred/fANSI.svg?maxAge=3600)](https://github.com/ripred/fANSI/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ripred/fANSI/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ripred/fANSI/blob/master/LICENSE)
 
 fANSI Library
 
