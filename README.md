@@ -3,6 +3,11 @@
 [![GitHub release](https://flat.badgen.net/github/release/ripred/fANSI)](https://github.com/ripred/fANSI/releases/latest)
 [![License: MIT](https://flat.badgen.net/github/license/ripred/fANSI)](https://github.com/ripred/fANSI/blob/main/LICENSE)
 
+[![JSON check](https://github.com/ripred/fANSI/actions/workflows/jsoncheck.yml/badge.svg)](https://github.com/ripred/fANSI/actions/workflows/jsoncheck.yml)
+[![Arduino Library Manager](https://www.ardu-badge.com/badge/fANSI.svg)](https://www.ardu-badge.com/fANSI)
+[![Stars](https://flat.badgen.net/github/stars/ripred/fANSI)](https://github.com/ripred/fANSI/stargazers)
+[![Forks](https://flat.badgen.net/github/forks/ripred/fANSI)](https://github.com/ripred/fANSI/network/members)
+
 fANSI Library
 
 This library allows you to send ANSI control sequences to a PC, Mac, or Linux
